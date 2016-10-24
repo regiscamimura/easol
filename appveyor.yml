@@ -20,7 +20,7 @@ install:
   - IF %PHP%==1 echo extension=php_mbstring.dll >> php.ini
   - IF %PHP%==1 echo extension=php_fileinfo.dll >> php.ini
 
-before_script:
+before_test:
   
   #- vendor\bin\codecept build
 
