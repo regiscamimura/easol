@@ -1,7 +1,6 @@
 <?php 
 
-echo php_uname();
-
+print_r($_ENV);
 $info = ['Database'=>'easol_dev', 'UID'=>'easol_dev_dba', 'PWD'=>$_ENV['CI_DATABASE_PASSWORD']];
  
 $conn = sqlsrv_connect('oqc2uoyejf.database.windows.net', $info);
