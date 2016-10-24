@@ -24,6 +24,11 @@ install:
   - IF %PHP%==1 echo extension=php_mbstring.dll >> php.ini
   - IF %PHP%==1 echo extension=php_fileinfo.dll >> php.ini
 
+  - copy c:\projects\easol\appveyor\*.dll c:\php\ext\.
+  - IF %PHP%==1 echo extension=php_pdo_sqlsrv_7_nts_x86.dll >> php.ini
+  - IF %PHP%==1 echo extension=php_sqlsrv_7_nts_x86.dll >> php.ini
+
+
 before_test:
   
   #- vendor\bin\codecept build
